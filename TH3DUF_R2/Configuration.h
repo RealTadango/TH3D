@@ -155,7 +155,7 @@
 //===========================================================================
 // Creality CR-10 Options - Select 'Sanguino 1284P' from Tools > Board
 //===========================================================================
-//#define CR10
+#define CR10
 //#define CR10_MINI
 //#define CR10_S4
 //#define CR10_S5
@@ -765,13 +765,13 @@
 
 // If you want PID tuning on your bed you can enable the below line. But PID on a bed is not typically needed. By default BED PID is disabled.
 // This will be disabled when using automatic or manual mesh leveling with a 1284p board due to memory limitations.
-//#define PIDBED_ENABLE
+#define PIDBED_ENABLE
 
 // If you are using an AC bed with a standalone controller (Keenovo) uncomment the below line to disable the heated bed in the firmware
 //#define AC_BED
 
 // Stock bed max is 120C for this firmware. Enable this to allow temps up to 150C. Your bed must support this temp for it to achieve the higher temperatures.
-//#define BED_HIGHTEMP
+#define BED_HIGHTEMP
 
 // MISC --------------------------------------------
 
@@ -811,7 +811,7 @@
 // LINEAR ADVANCE ----------------------------------
 // See here on how to use Linear Advance: http://marlinfw.org/docs/features/lin_advance.html
 //
-//#define LINEAR_ADVANCE
+#define LINEAR_ADVANCE
 // Change the K Value here or use M900 KX.XX in your starting code (recommended).
 #define LINEAR_ADVANCE_K 0
 // NOTE: If using linear advance along with EZABL on a printer with 1284p some Control > Motion menus will not be displayed due to space restrictions.
@@ -849,8 +849,8 @@
 // There are 2 new acceleration/jerk controls available in this firmware that can result is better print quality and
 // smoother movement. To try each out just enable them below.
 // Due to Anet board restrictions this is always disabled on those machines.
-//#define JUNCTION_DEVIATION_ON
-//#define S_CURVE_ACCELERATION_ON
+#define JUNCTION_DEVIATION_ON
+#define S_CURVE_ACCELERATION_ON
 
 //================================================================================================
 // Language - This is provided for convenience and is unsupported with included product support.
